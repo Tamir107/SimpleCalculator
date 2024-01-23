@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Nanum+Pen+Script&display=swap');
+    </style>
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+<div id="calc">
+    <div id="calcHeader">
+        <div id="expressionScreen"></div>
+        <div id="resultScreen"></div>
+    </div>
+    <div id="calcBody">
+        <div id="firstRow">
+            <button id="numberOne" onclick="appendResult(innerHTML);">1</button>
+            <button id="numberTwo" onclick="appendResult(innerHTML);">2</button>
+            <button id="numberThree" onclick="appendResult(innerHTML);">3</button>
+            <button id="plus" onclick="appendResult(innerHTML);setNum1(innerHTML);">+</button>
+        </div>
+        <div id="secondRow">
+            <button id="numberFour" onclick="appendResult(innerHTML);">4</button>
+            <button id="numberFive" onclick="appendResult(innerHTML);">5</button>
+            <button id="numberSix" onclick="appendResult(innerHTML);">6</button>
+            <button id="minus" onclick="appendResult(innerHTML);setNum1(innerHTML);">-</button>
+        </div>
+        <div id="thirdRow">
+            <button id="numberSeven" onclick="appendResult(innerHTML);">7</button>
+            <button id="numberEight" onclick="appendResult(innerHTML);">8</button>
+            <button id="numberNine" onclick="appendResult(innerHTML);">9</button>
+            <button id="divide" onclick="appendResult(innerHTML);setNum1(innerHTML);">/</button>
+        </div>
+        <div id="fourthRow">
+            <button id="clear" onclick="clearCalc()">C</button>
+            <button id="numberZero" onclick="appendResult(innerHTML);">0</button>
+            <button id="equal" onclick="getFinalResult()">=</button>
+            <button id="multiply" onclick="appendResult(innerHTML);setNum1(innerHTML);">X</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
